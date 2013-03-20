@@ -1,0 +1,63 @@
+/*
+ * Author: mervin
+ * Date: 2013-03-10
+ * Version: 1.0
+ */
+body{
+	font-family: 'Microsoft YaHei', Courier, monospace, 'Sentinel-Book', serif;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	line-height: 1.4;
+	color: #999999;
+	margin: 0;
+	background-image: url(../css/img/site-bg4.jpg);
+}
+
+.menu{
+	//margin-top: 5px;
+}
+
+.btn{
+ 	padding: 5px;
+ 	font-size: 16px;
+}
+
+.footer{
+	color: #98A3A8;
+	position: relative;
+	font-size: 14px;
+	background-color: #F4F5F0;
+	text-align: center;
+	margin: 20px 0 5px 0;
+}
+
+iframe{
+	height: 100%;
+	border: none;
+	overflow: hidden;
+}
+
+.container{
+	width: 100%;
+}
+
+.content{
+	height: 100%;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.navbar .nav li{
+	display: table-cell;
+	width: 1%;
+	float: none;
+}
+
+.navbar .nav{
+	float: none;
+	margin-left: 300px;
+}
+
+

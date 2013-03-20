@@ -1,0 +1,290 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/LKf8nhXsWg5ybwEGXk8UBQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Caption'), local('PTSans-Caption'), url(../woff/OXYTDOzBcXU8MTNBvBHeSQRW432DtwGNER78eOJ0i0s.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'), url(http://themes.googleusercontent.com/static/fonts/ptsanscaption/v5/Q-gJrFokeE7JydPpxASt2w9wu1CdFtjuMIsaFqyYbWg.woff) format('woff');
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    width:100%;
+    height:100%;
+    font:400 12px/18px "STHeiti", "Microsoft YaHei",  "SimSun", "宋体", "Arial";
+    color: #FFFFFF;
+    cursor:default;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    line-height: 1;
+    
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, textarea, p, blockquote, header, footer,
+th, td, iframe {
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	//overflow: hidden;
+}
+
+#browser_fe_page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.navmenu-barbg, .navmenu-baron, .navmenu-menuitem-bg, .navmenu-childrenmenuitem-bg {
+	background: #d00355
+}
+
+/*	页面loading	*/
+#browser-fe-page-loading {
+	width: 16px;
+	height: 11px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -8px;
+	z-index: 0;
+	-webkit-transition: all .4s ease-in;
+}
+
+/*	左侧menu	*/
+.olControlNavMenu {
+	position: absolute;
+	height: 100%;
+	-webkit-transform: translateX(-230px);
+	overflow: visible;
+	min-height: 400px;
+	-webkit-transition: all .3s ease-in;
+	-webkit-box-shadow: 0px 0px 2px #0c0c0c;	
+	width: 240px;
+}
+
+.navmenu-menucontent {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 230px;
+}
+
+.navmenu-menubg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 7;	
+	background: #FFFFFF url("../images/menu_pattern_1.png") 0 0 repeat;
+}
+
+#navmenu_menubar {
+	position: relative;
+	float: left;
+	width: 10px;
+	height: 100%;
+	z-index: -1;	
+}
+
+.navmenu-barbg {
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	left: 0px;
+	z-index: 2;	
+}
+
+.navmenu-baron {
+	position: absolute;
+	left: 3px;
+	top: 68px;
+	height: 30px;
+	width: 20px;
+	background-position: 8px 8px;
+	background-image: url("../images/main.png");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 1;	
+}
+
+.olControlNavMenuActive .olControlNavMenu {
+	-webkit-transform: translateX(0px);
+}
+
+.olControlNavMenuActive .navmenu-baron {
+	background-position-x: -16px;
+}
+
+.navmenu-log {
+	text-align: center;
+	clear: both;
+	position: relative;
+	float: left;
+	width: 140px;
+	height: 90px;
+	margin: 28px 0 28px -70px;
+	z-index: 8;
+	left: 50%;
+	line-height: 90px;
+	font-size: 18px;
+}
+
+.navmenu-content {
+	clear: both;
+	position: relative;
+	float: left;
+	padding: 0;
+	z-index: 9;	
+	width: 210px;
+	margin: 0 0 0 20px;
+}
+
+.navmenu-menuitem-container {
+	height: 32px;
+	margin-bottom: 1px;
+	cursor: pointer;
+	position: relative;
+}
+
+.navmenu-menuitem-bg {
+	position: absolute;
+	z-index: 1;
+	width: 0;
+	margin-left: 210px;
+	height: 32px;
+	-webkit-transition: all .3s ease-in;
+}
+
+.navmenu-menuitem-container:hover .navmenu-menuitem-bg, .navmenu-menuitem-container.select .navmenu-menuitem-bg {
+	width: 220px;
+	margin-left: 0px;
+}
+
+.navmenu-menuitem-container:hover .navmenu-menuitem-text, .navmenu-menuitem-container.select .navmenu-menuitem-text, 
+.navmenu-menuitem-container:hover .navmenu-menuitem-plus, .navmenu-menuitem-container.select .navmenu-menuitem-plus,
+.navmenu-childrenmenuitem-item:hover .navmenu-childrenmenuitem-text, .navmenu-childrenmenuitem-item.select .navmenu-childrenmenuitem-text {
+	color: #FFFFFF;
+}
+
+.navmenu-menuitem-text, .navmenu-menuitem-plus, .navmenu-childrenmenuitem-text {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 14px;
+	font-size: 12px;
+	color: rgb(119, 119, 119);
+	overflow: hidden;
+	text-decoration: none;
+	outline: none;		
+	position: absolute;
+	z-index: 2;	
+	-webkit-transition: all .1s ease-in;
+}
+
+.navmenu-menuitem-plus {
+	position: absolute;
+	top: 0px;
+	right: 16px;
+	text-align: right;
+	font-family: PT Sans Caption;
+}
+
+.navmenu-menuitem-childrenmenu {
+	position: relative;
+	overflow: hidden;
+	margin-left: 220px;	
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	-webkit-transition: height .3s ease-out, opacity .3s ease-out, width .3s ease-out;
+}
+
+.navmenu-menuitem-container:hover .navmenu-menuitem-childrenmenu {
+	display: block;
+	opacity: 1;
+	width: 176px;
+	background: #FFFFFF url("../images/menu_pattern_1.png") 0 0 repeat;
+}
+
+.navmenu-menuitem-text, .navmenu-childrenmenuitem-text, .navmenu-childrenmenuitem-item, .navmenu-childrenmenuitem-bg {
+	height: 32px;
+}
+
+.navmenu-childrenmenuitem-item {
+	margin-bottom: 1px;
+}
+
+.navmenu-childrenmenuitem-bg {
+	width: 0px;
+	margin-left: 212px;
+	-webkit-transition: all .3s ease-out;
+	position: absolute;
+	z-index: 1;
+}	
+
+.navmenu-childrenmenuitem-item:hover .navmenu-childrenmenuitem-bg, .navmenu-childrenmenuitem-item.select .navmenu-childrenmenuitem-bg {
+	width: 212px;
+	margin-left: 0px;	
+}
+
+.navmenu-childrenmenuitem-text {
+	position: absolute;
+	z-index: 2;	
+	width: 210px;
+}
+
+.navmenu-link:hover .navmenu-menuitem-text, .navmenu-link:hover .navmenu-childrenmenuitem-text {
+	text-decoration: underline;
+}
+/*	右侧正文	*/
+.olLayerDiv {
+	position: absolute;
+	left: 10px;
+	right: 0;
+	height: 100%;
+	-webkit-transition: left .3s ease-in, background .3s ease-in;
+}
+
+.olControlNavMenuActive .olLayerDiv {
+	left: 240px;
+//	width: -webkit-calc(100% - 30px);
+}

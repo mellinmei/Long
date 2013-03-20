@@ -1,0 +1,281 @@
+body{
+    width:100%;
+    height:100%;
+    font:400 12px/18px "STHeiti", "Microsoft YaHei",  "SimSun", "宋体", "Arial";
+    color: #FFFFFF;
+    cursor:default;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    padding: 0px;
+}
+#template-wrapper{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+#module-container{
+    position: absolute;
+}
+##module-background-holder{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+#module-container-holder {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    visibility: visible
+}
+#module-arti-vertical {
+    float: left;
+    position: relative;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.module-arti-vertical {
+    top: 0px;
+    width: 580px;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.shadow-side-right {
+    -moz-box-shadow: 1px 1px 2px #0c0c0c;
+    -webkit-box-shadow: 1px 1px 2px #0c0c0c;
+    box-shadow: 1px 1px 2px #0c0c0c;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=120, Color='#0c0c0c')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=120, Color='#0c0c0c');
+}
+
+#module-arti-vertical-holder{
+    z-index: 1;
+}
+#module-arti-preview-holder{
+    z-index: 2;
+    display: none;
+}
+#module-arti-vertical-holder,#module-arti-preview-holder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+#module-arti-vertical-container {
+    position: relative;
+    display: inline-block;
+    margin: 45px 45px;
+}
+.title-holder {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.title-text_normal {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 120%;
+    color: #333333;
+    text-align: left;
+}
+
+.custom-separator, .custom-separator-preview-arti {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+}
+.arti-item-vertical {
+    position: relative;
+    float: left;
+    margin-top: 22px;
+    z-index: 4;
+}
+
+.arti-item-vertical-title {
+    position: relative;
+    float: left;
+    margin: 0 0 20px;
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+    text-align: left;
+    cursor: pointer;
+}
+
+.media-holder-arti-vertical {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.main-text-holder {
+    clear: both;
+    position: relative;
+    float: left;
+    line-height: 170%;
+    font-size: 13px;
+    color: #444444;
+    text-align: justify;
+    margin-top: 20px;
+}
+.main-text-holder p {
+    line-height: 170%;
+    font-size: 13px;
+    color: #444444;
+    text-align: justify;
+    margin-top: 20px;
+}
+.arti-item-vertical-read-more {
+    position: relative;
+    float: left;
+    background-color: #3F3F3F;
+    cursor: pointer;
+    cursor: hand;
+    margin-top: 15px;
+    width: 18%;
+}
+.arti-item-vertical-read-more span {
+    position: relative;
+    float: left;
+    width: 94%;
+    padding: 3%;
+    font-size: 13px;
+    line-height: 200%;
+    color: #ffffff;
+    overflow: hidden;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#module-arti-preview-container {
+    left: 572px;
+    display: inline-block;
+    margin: 39px 5px;
+    position: relative;
+    overflow: hidden;
+}
+#arti-preview-controls {
+    position: relative;
+
+    margin-left: 350px;
+}
+
+#module-arti-preview-container ul li {
+    width: 490px;
+}
+.columns-preview-counter, .arti-preview-counter {
+    float: left;
+    background-color: #3F3F3F;
+    margin-left: 1px;
+    height: 38px;
+    -webkit-user-select: none;
+}
+.columns-preview-counter span, .arti-preview-counter span {
+    display: block;
+    font-family: Century Gothic,Arial;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.arti-preview-backward, .arti-preview-close, .arti-preview-forward {
+    position: relative;
+    float: left;
+    background-color: #3F3F3F;
+    cursor: pointer;
+    cursor: hand;
+    margin-left: 4px;
+    width: 38px;
+    height: 38px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.arti-preview-backward-sign{
+    background-position: -198px -198px;
+}
+.arti-preview-close-sign {
+    background-position: -232px -197px;
+}
+.arti-preview-forward-sign {
+    background-position: -266px -198px;
+}
+.arti-preview-backward-sign, .arti-preview-forward-sign, .arti-preview-close-sign {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../resources/themes/default/images/ArtiImgs/synergy_sprite.png);
+}
+#module-arti-preview-container ul {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.arti-preview-horizontal-fix, #module-arti-preview-container ul li {
+    width: 490px;
+}
+#module-arti-preview-container ul li {
+    float: left;
+    margin-right: 45px;
+    margin-left: 39px;
+}
+.custom-separator-preview-news {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.custom-separator, .custom-separator-preview-news {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+}
+.media-holder-news-preview {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    margin-top: 22px;
+    background-image: url(../../resources/themes/default/images/ArtiImgs/loader_circle.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.artihide{
+    left: -601px;
+    -webkit-transition: left 1s linear;
+}
